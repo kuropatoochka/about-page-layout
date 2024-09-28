@@ -11,32 +11,38 @@
     </head>
     <body>
         <header class="header">
-            <div class="container header-container">
-                <div class="header-navigation">
+            <div class="container header__container">
+                <a href="#" class="header__logo">
                     <img class="logo" src="img/logo.svg" alt="MOON" width="183">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#home" class="menu__link">Home</a> 
-                            </li>
-                            <li class="menu__item">
-                                <a href="#shop" class="menu__link">Shop</a> 
-                            </li>
-                            <li class="menu__item">
-                                <a href="#about" class="menu__link">About</a> 
-                            </li>
-                            <li class="menu__item">
-                                <a href="#contact" class="menu__link">Contact</a> 
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-search">
+                </a>
+                <nav class="menu header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#home" class="menu__link">Home</a> 
+                        </li>
+                        <li class="menu__item">
+                            <a href="#shop" class="menu__link">Shop</a> 
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">About</a> 
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact" class="menu__link">Contact</a> 
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__search">
                     <button class="search-field">
-                        <img src="img/Search.svg" alt="search">                      
+                        <svg width="18.597015" height="18.597046" viewBox="0 0 18.597 18.597" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                    Created with Pixso.
+                            </desc>
+                            <defs/>
+                            <path id="Search" d="M17.79 17.79L13.4 13.4M8.12 0.79C12.17 0.79 15.45 4.07 15.45 8.12C15.45 12.17 12.17 15.45 8.12 15.45C4.07 15.45 0.79 12.17 0.79 8.12C0.79 4.07 4.07 0.79 8.12 0.79Z" stroke="#A6A6A8" stroke-opacity="1.000000" stroke-width="1.593750" stroke-linejoin="round" stroke-linecap="round"/>
+                        </svg>                                             
                         <input type="text" placeholder="Search item...">
                     </button>
-                    <div class="header__actions">
+                    <div class="header__action">
                         <a href="#favorites" class="header__action-link">
                             <img src="img/Heart.svg" alt="favorites">
                         </a>
@@ -45,18 +51,18 @@
                         </a>                                                 
                         <a href="#user" class="header__action-link">
                             <img src="img/User.svg" alt="user">
-                        </a>                           
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <div class="container main-container">
-                <section class="main-title">
-                    <h1 class="text-sb">ABOUT MOON</h1>
+            <div class="container main__container">
+                <div class="main__title">
+                    <h1>ABOUT MOON</h1>
                     <p class="text-reg">Moon's handmade ceramic products have been around since 1650, let's explore our journey</p>
-                </section>
-                <div class="history">
+                </div>
+                <div class="main__history">
                     <article class="card">
                         <div class="card__body">
                             <h2 class="card__title text-sb">1910</h2>
@@ -79,7 +85,7 @@
                         <img class="card__img card__img_small" src="img/card3.png" alt="history">
                     </article>
                 </div>
-                <section class="main-process">
+                <div class="main__process">
                     <img src="img/image-process.png" alt="process" width="692" height="380">
                     <div class="process-description">
                         <h2>HOW WE WORK</h2>
@@ -98,9 +104,9 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="team"></section>
-                <form></form>
+                </div>
+                <div class="main__team"></div>
+                <form class="main__form"></form>
             </div>
         </main>
         <footer></footer>

@@ -67,14 +67,8 @@ input::placeholder{
 
 .container{
     max-width: var(--max-width);
+    width: 100%;
     margin: 0 auto;
-}
-
-.header-navigation,
-.header-search,
-.header__actions {
-    display: flex;
-    align-items: center;
 }
 
 .header {
@@ -82,17 +76,14 @@ input::placeholder{
     padding: 24px 0;
 }
 
-.header-container{
-    width: 100%;
+.header__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header-navigation{
-    gap: calc(var(--max-width) * 0.1);
-}
-
-.logo {
+.header__logo {
+    display: block;
     width: 183px;
 }
 
@@ -120,7 +111,13 @@ input::placeholder{
     border-bottom: 1px solid var(--base-color-active);
 }
 
-.header-search{
+.header__search,
+.header__action {
+    display: flex;
+    align-items: center;
+}
+
+.header__search {
     gap: 64px;
 }
 
@@ -145,7 +142,7 @@ input::placeholder{
     stroke: var(--base-color-header);
 }
 
-.header__actions {
+.header__action {
     gap: 16px;
 }
 
@@ -153,23 +150,29 @@ input::placeholder{
     margin-top: 64px;
 }
 
-.main-container{
-    width: 100%;
+.main__container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 130px;
 }
 
-.main-title{
+.main__title{
     width: 386px;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 16px;
+    margin-bottom: 40px;
 }
 
-.history{
+.main__history,
+.main-process,
+.main__team,
+.main__form {
+    margin-bottom: 130px;
+}
+
+.main__history{
     display: grid;
     grid-template-columns: 488px 692px;
     grid-template-rows: repeat(2, 340px);
@@ -233,9 +236,34 @@ input::placeholder{
     gap: 8px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 1240px) {
+    .header {
+        padding: 24px 16px;
+    }
+}
 
-    .history{
+@media (max-width: 950px) {
+    .menu,
+    .header__search,
+    .header__action {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+    .header {
+        padding: 16px;
+    }
+
+    .header__logo {
+        width: 124px;
+    }
+
+    .main__title {
+        width: 333px;
+    }
+
+    .main__history{
         display: grid;
         grid-template-columns: 328px;
         grid-template-rows: repeat(3, auto);
