@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>MOON</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="normalize.css">
         <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
         <style>
             @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
@@ -31,8 +32,8 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__search">
-                    <button class="search-field">
+                <div class="search header__search">
+                    <button class="default-field search-field">
                         <svg width="18.597015" height="18.597046" viewBox="0 0 18.597 18.597" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <desc>
                                     Created with Pixso.
@@ -40,7 +41,7 @@
                             <defs/>
                             <path id="Search" d="M17.79 17.79L13.4 13.4M8.12 0.79C12.17 0.79 15.45 4.07 15.45 8.12C15.45 12.17 12.17 15.45 8.12 15.45C4.07 15.45 0.79 12.17 0.79 8.12C0.79 4.07 4.07 0.79 8.12 0.79Z" stroke="#A6A6A8" stroke-opacity="1.000000" stroke-width="1.593750" stroke-linejoin="round" stroke-linecap="round"/>
                         </svg>                                             
-                        <input type="text" placeholder="Search item...">
+                        <input class="search-input" type="text" placeholder="Search item...">
                     </button>
                     <div class="header__action">
                         <a href="#favorites" class="header__action-link">
@@ -65,48 +66,91 @@
                 <div class="main__history">
                     <article class="card">
                         <div class="card__body">
-                            <h2 class="card__title text-sb">1910</h2>
+                            <h2 class="card__title card__title_sb">1910</h2>
                             <p class="card__description text-reg">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque phasellus.</p>
                         </div>
                         <img class="card__img" src="img/card1.png" alt="history">
                     </article>
                     <article class="card card_small">
                         <div class="card__body card__body_small">
-                            <h2 class="card__title text-sb">1990</h2>
+                            <h2 class="card__title card__title_sb">1990</h2>
                             <p class="card__description text-reg">Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi. dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit.</p>
                         </div>
                         <img class="card__img card__img_small" src="img/card2.png" alt="history">
                     </article>
                     <article class="card card_small">
                         <div class="card__body card__body_small">
-                            <h2 class="card__title text-sb">2010</h2>
+                            <h2 class="card__title card__title_sb">2010</h2>
                             <p class="card__description text-reg">Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus. sit aliquam sit nullam neque ultrices.</p>
                         </div>
                         <img class="card__img card__img_small" src="img/card3.png" alt="history">
                     </article>
                 </div>
                 <div class="main__process">
-                    <img src="img/image-process.png" alt="process" width="692" height="380">
-                    <div class="process-description">
-                        <h2>HOW WE WORK</h2>
-                        <div class="main-process-texts">
-                            <div class="main-process-text">
-                                <h3>Product design</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis.</p>
-                            </div>
-                            <div class="main-process-text">
-                                <h3>Crafted</h3>
-                                <p>Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus.</p>
-                            </div>
-                            <div class="main-process-text">
-                                <h3>Sell product</h3>
-                                <p>Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi.</p>
-                            </div>
-                        </div>
+                    <img class="process__img" src="img/image-process.png" alt="process">
+                    <div class="process__description">
+                        <h2 class="title_H3">HOW WE WORK</h2>
+                        <ul class="process__list">
+                            <li class="process__item">
+                                <h3 class="process__item_title sb">Product design</h3>
+                                <p class="text-reg reg">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis.</p>
+                            </li>
+                            <li class="process__item">
+                                <h3 class="process__item_title sb">Crafted</h3>
+                                <p class="text-reg reg">Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus.</p>
+                            </li>
+                            <li class="process__item">
+                                <h3 class="process__item_title sb">Sell product</h3>
+                                <p class="text-reg reg">Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="main__team"></div>
-                <form class="main__form"></form>
+                <div class="main__team">
+                    <h2 class="team__title title_H3">MEET OUR TEAM</h2>
+                    <div class="staff">
+                        <article class="staff__card">
+                            <img class="staff__card_img" src="img/user1.svg" alt="staff">
+                            <div class="staff__card_body">
+                                <h2 class="staff__card_title sb sb-mini">Bernie Patterson</h2>
+                                <p class="staff__card_description text-reg">CEO & Founder</p>
+                            </div>
+                        </article>
+                        <article class="staff__card">
+                            <img class="staff__card_img" src="img/user2.svg" alt="staff">
+                            <div class="staff__card_body">
+                                <h2 class="staff__card_title sb sb-mini">Ophelia Vase</h2>
+                                <p class="staff__card_description text-reg">Creative Director</p>
+                            </div>
+                        </article>
+                        <article class="staff__card">
+                            <img class="staff__card_img" src="img/user3.svg" alt="staff">
+                            <div class="staff__card_body">
+                                <h2 class="staff__card_title sb sb-mini">Corbin Hossain</h2>
+                                <p class="staff__card_description text-reg">Artist</p>
+                            </div>
+                        </article>
+                        <article class="staff__card">
+                            <img class="staff__card_img" src="img/user4.svg" alt="staff">
+                            <div class="staff__card_body">
+                                <h2 class="staff__card_title sb sb-mini">Seren Bowl</h2>
+                                <p class="staff__card_description text-reg">Marketing</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <form class="form main__form">
+                    <div class="form__body">
+                        <h3 class="form__body_sb">Sign up for emails</h3>
+                        <h2 class="title_H3">For news, collections & more</h2>
+                    </div>
+                    <div class="form__btn">
+                        <button type="button" class="default-field email-field">
+                            <input class="email-input" type="text" placeholder="Enter your email address">
+                        </button>
+                        <button type="button" class="primary-m-btn form__primary-m-btn">Sign up</button>
+                    </div>
+                </form>
             </div>
         </main>
         <footer></footer>
