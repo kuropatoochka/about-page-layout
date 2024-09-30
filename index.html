@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <title>MOON</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="normalize.css">
@@ -14,21 +15,21 @@
         <header class="header">
             <div class="container header__container">
                 <a href="#" class="header__logo">
-                    <img class="logo" src="img/logo.svg" alt="MOON" width="183">
+                    <img class="logo" src="img/logo.svg" alt="Moon logo">
                 </a>
                 <nav class="menu header__menu">
-                    <ul class="menu__list">
+                    <ul class="list menu__list">
                         <li class="menu__item">
-                            <a href="#home" class="menu__link">Home</a> 
+                            <a href="#home" class="link menu__link">Home</a> 
                         </li>
                         <li class="menu__item">
-                            <a href="#shop" class="menu__link">Shop</a> 
+                            <a href="#shop" class="link menu__link">Shop</a> 
                         </li>
                         <li class="menu__item">
-                            <a href="#about" class="menu__link">About</a> 
+                            <a href="#about" class="link menu__link">About</a> 
                         </li>
                         <li class="menu__item">
-                            <a href="#contact" class="menu__link">Contact</a> 
+                            <a href="#contact" class="link menu__link">Contact</a> 
                         </li>
                     </ul>
                 </nav>
@@ -44,13 +45,13 @@
                         <input class="search-input" type="text" placeholder="Search item...">
                     </button>
                     <div class="header__action">
-                        <a href="#favorites" class="header__action-link">
+                        <a href="#favorites" class="icon header__action-link">
                             <img src="img/Heart.svg" alt="favorites">
                         </a>
-                        <a href="#shopping" class="header__action-link">
+                        <a href="#shopping" class="icon header__action-link">
                             <img src="img/Shopping cart.svg" alt="shopping">  
                         </a>                                                 
-                        <a href="#user" class="header__action-link">
+                        <a href="#user" class="icon header__action-link">
                             <img src="img/User.svg" alt="user">
                         </a>
                     </div>
@@ -60,8 +61,8 @@
         <main class="main">
             <div class="container main__container">
                 <div class="main__title">
-                    <h1>ABOUT MOON</h1>
-                    <p class="text-reg">Moon's handmade ceramic products have been around since 1650, let's explore our journey</p>
+                    <h1 class="title_H2">ABOUT MOON</h1>
+                    <p class="main__title_text text-reg">Moon's handmade ceramic products have been around since 1650, let's explore our journey</p>
                 </div>
                 <div class="main__history">
                     <article class="card">
@@ -69,21 +70,21 @@
                             <h2 class="card__title card__title_sb">1910</h2>
                             <p class="card__description text-reg">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque phasellus.</p>
                         </div>
-                        <img class="card__img" src="img/card1.png" alt="history">
+                        <img class="card__img" src="img/card1.svg" alt="history">
                     </article>
                     <article class="card card_small">
                         <div class="card__body card__body_small">
                             <h2 class="card__title card__title_sb">1990</h2>
                             <p class="card__description text-reg">Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi. dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit.</p>
                         </div>
-                        <img class="card__img card__img_small" src="img/card2.png" alt="history">
+                        <img class="card__img card__img_small" src="img/card2.svg" alt="history">
                     </article>
                     <article class="card card_small">
                         <div class="card__body card__body_small">
                             <h2 class="card__title card__title_sb">2010</h2>
                             <p class="card__description text-reg">Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus. sit aliquam sit nullam neque ultrices.</p>
                         </div>
-                        <img class="card__img card__img_small" src="img/card3.png" alt="history">
+                        <img class="card__img card__img_small" src="img/card3.svg" alt="history">
                     </article>
                 </div>
                 <div class="main__process">
@@ -119,15 +120,15 @@
                         <article class="staff__card">
                             <img class="staff__card_img" src="img/user2.svg" alt="staff">
                             <div class="staff__card_body">
-                                <h2 class="staff__card_title sb sb-mini">Ophelia Vase</h2>
-                                <p class="staff__card_description text-reg">Creative Director</p>
+                                <h2 class="staff__card_title">Ophelia Vase</h2>
+                                <p class="staff__card_description">Creative Director</p>
                             </div>
                         </article>
                         <article class="staff__card">
                             <img class="staff__card_img" src="img/user3.svg" alt="staff">
                             <div class="staff__card_body">
                                 <h2 class="staff__card_title sb sb-mini">Corbin Hossain</h2>
-                                <p class="staff__card_description text-reg">Artist</p>
+                                <p class="staff__card_description staff__card_description_min">Artist</p>
                             </div>
                         </article>
                         <article class="staff__card">
@@ -141,7 +142,7 @@
                 </div>
                 <form class="form main__form">
                     <div class="form__body">
-                        <h3 class="form__body_sb">Sign up for emails</h3>
+                        <h3 class="form__body_text">Sign up for emails</h3>
                         <h2 class="title_H3">For news, collections & more</h2>
                     </div>
                     <div class="form__btn">
@@ -153,6 +154,52 @@
                 </form>
             </div>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__content">
+                    <div class="footer__about">
+                        <img class="logo footer__logo" src="img/logo active.svg" alt="Moon logo">
+                        <p class="footer__about_text text-reg">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
+                        <button type="button" class="outline-l-btn footer__outline-btn">
+                            <p>Get started</p>
+                            <img class="icon icon-default" src="img/arrow-rigth-defualt.svg" alt="arrow">
+                            <img class="icon icon-active" src="img/arrow-rigth-active.svg" alt="arrow">
+                        </button>
+                    </div>
+                    <ul class="list footer__nav">
+                        <li class="footer__nav_title">About us
+                            <ul class="list footer__nav_links">
+                                <li><a class="link footer__nav_link" href="#mission">Mission</a></li>
+                                <li><a class="link footer__nav_link" href="#team">Our team</a></li>
+                                <li><a class="link footer__nav_link" href="#awards">Awards</a></li>
+                                <li><a class="link footer__nav_link" href="#testimonials">Testimonials</a></li>
+                                <li><a class="link footer__nav_link" href="#policy">Privacy policy</a></li>
+                            </ul>
+                        </li>        
+                        <li class="footer__nav_title">Services
+                            <ul class="list footer__nav_links">
+                                <li><a class="link footer__nav_link" href="#web design">Web design</a></li>
+                                <li><a class="link footer__nav_link" href="#web development">Web development</a></li>
+                                <li><a class="link footer__nav_link" href="#mobile design">Mobile design</a></li>
+                                <li><a class="link footer__nav_link" href="#UX/UI design">UX/UI design</a></li>
+                                <li><a class="link footer__nav_link" href="#branding design">Branding design</a></li>
+                            </ul>
+                        </li>        
+                        <li class="footer__nav_title">Portfolio
+                            <ul class="list footer__nav_links">
+                                <li><a class="link footer__nav_link" href="#corporate websites">Corporate websites</a></li>
+                                <li><a class="link footer__nav_link" href="#E-commerce">E-commerce</a></li>
+                                <li><a class="link footer__nav_link" href="#mobile apps">Mobile apps</a></li>
+                                <li><a class="link footer__nav_link" href="#landing pages">Landing pages</a></li>
+                                <li><a class="link footer__nav_link" href="#UX/UI projects">UX/UI projects</a></li>
+                            </ul>
+                        </li>
+                    </ul>                    
+                </div>
+                <div class="footer__copyright">
+                    <p class="footer__copyright_text">Copyright © 2023 Moon | All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

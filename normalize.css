@@ -1,6 +1,4 @@
 img {
-    max-width: 100%;
-    width: 100%;
     display: block;
     border-radius: 4px;
     object-fit: cover;
@@ -43,16 +41,68 @@ h3{
     transition: background-color var(--transition-duration);
 }
 
-.primary-m-btn:hover {
-    background-color: var(--base-color);
-}
-
-.primary-m-btn:focus {
-    outline: 2px solid #807F86;
+@media (hover: hover) {
+    .primary-m-btn:hover {
+        background-color: var(--base-color);
+    }
 }
 
 .primary-m-btn:active {
     background-color: #807F86;
+}
+
+.outline-l-btn {
+    width: 240px;
+    padding: 14px 0;
+
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    transition: background-color var(--transition-duration), border var(--transition-duration);
+}
+
+.outline-l-btn .icon-active {
+    display: none;
+}
+
+@media (hover: hover) {
+    .outline-l-btn:hover {
+        color: var(--base-color-header);
+        background-color: var(--base-background-color);
+    }
+    
+    .outline-l-btn:hover .icon-default {
+        display: none;
+    }
+    
+    .outline-l-btn:hover .icon-active {
+        display: initial;
+    }    
+}
+
+.outline-l-btn:active {
+    border: 1px solid var(--base-color-header);
+    background-color: var(--border-color);
+}
+
+.outline-m-btn {
+    width: 170px;
+    padding: 14px 0;
+
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    transition: background-color var(--transition-duration);
 }
 
 .default-field {
@@ -65,3 +115,5 @@ input {
     border: none;
     outline: none;
 }
+
+
